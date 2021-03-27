@@ -36,6 +36,7 @@ type GetBlockBodiesOpts = {
 export interface EthProtocolMethods {
   getBlockHeaders: (opts: GetBlockHeadersOpts) => Promise<[BN, BlockHeader[]]>
   getBlockBodies: (opts: GetBlockBodiesOpts) => Promise<[BN, BlockBodyBuffer[]]>
+  getNodeData: (hashes: Buffer[]) => Promise<Buffer[]>
 }
 
 const id = new BN(0)
@@ -112,6 +113,15 @@ export class EthProtocol extends Protocol {
         bodies,
       ],
       decode: ([reqId, bodies]: [Buffer, BlockBodyBuffer[]]) => [new BN(reqId), bodies],
+    },
+    {
+      name: 'GetNodeData',
+      code: 0x0d,
+      response: 0x0e,
+    },
+    {
+      name: 'NodeData',
+      code: 0x0e,
     },
   ]
 
