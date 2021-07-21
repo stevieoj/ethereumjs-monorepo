@@ -31,7 +31,8 @@
     "lint": "../../config/cli/lint.sh",
     "lint:fix": "../../config/cli/lint-fix.sh",
     "test": "tape -r ts-node/register ./tests/*.spec.ts",
-    "docs:build": "typedoc --options typedoc.js"
+    "docs:build": "typedoc --options typedoc.js",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "crc-32": "^1.2.0",
