@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1626923424068,
+  "lastUpdate": 1626930944431,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "855e154573b2754bb47068fec10cdfea7d16ab5c",
-          "message": "Merge pull request #1307 from ethereumjs/update-check-block\n\ndevp2p: update example to berlin hard fork",
-          "timestamp": "2021-06-21T14:04:46-04:00",
-          "tree_id": "c3c72593d056066dfb94e4f6fd9865854bf47733",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/855e154573b2754bb47068fec10cdfea7d16ab5c"
-        },
-        "date": 1624298817018,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 20348,
-            "range": "±12.70%",
-            "unit": "ops/sec",
-            "extra": "72 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 21517,
-            "range": "±2.49%",
-            "unit": "ops/sec",
-            "extra": "84 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 18878,
-            "range": "±3.09%",
-            "unit": "ops/sec",
-            "extra": "77 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 6861,
-            "range": "±16.48%",
-            "unit": "ops/sec",
-            "extra": "32 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 17676,
-            "range": "±2.43%",
-            "unit": "ops/sec",
-            "extra": "74 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1221,
-            "range": "±7.07%",
-            "unit": "ops/sec",
-            "extra": "60 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 110,
-            "range": "±117.74%",
-            "unit": "ops/sec",
-            "extra": "30 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 106,
-            "range": "±41.20%",
-            "unit": "ops/sec",
-            "extra": "59 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 26.28,
-            "range": "±7.45%",
-            "unit": "ops/sec",
-            "extra": "17 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±72.91%",
             "unit": "ops/sec",
             "extra": "17 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17355484+acolytec3@users.noreply.github.com",
+            "name": "acolytec3",
+            "username": "acolytec3"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ca6c8315d414941b87631abf4d5c7f366b8a2dc3",
+          "message": "Hardhat e2e test integration (#1348)",
+          "timestamp": "2021-07-21T22:13:24-07:00",
+          "tree_id": "d1d9ffd2887f97c44b80d070ffe37bcb61fa091a",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/ca6c8315d414941b87631abf4d5c7f366b8a2dc3"
+        },
+        "date": 1626930943386,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 15285,
+            "range": "±14.04%",
+            "unit": "ops/sec",
+            "extra": "63 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 16256,
+            "range": "±3.15%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 16758,
+            "range": "±1.97%",
+            "unit": "ops/sec",
+            "extra": "75 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 15098,
+            "range": "±2.76%",
+            "unit": "ops/sec",
+            "extra": "72 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 6847,
+            "range": "±22.99%",
+            "unit": "ops/sec",
+            "extra": "37 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1211,
+            "range": "±5.79%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 125,
+            "range": "±98.40%",
+            "unit": "ops/sec",
+            "extra": "34 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 118,
+            "range": "±19.79%",
+            "unit": "ops/sec",
+            "extra": "52 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 11.2,
+            "range": "±126.72%",
+            "unit": "ops/sec",
+            "extra": "18 samples"
           }
         ]
       }
