@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1627360073647,
+  "lastUpdate": 1627412664059,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "indigophi@protonmail.com",
-            "name": "Amir Ghorbanian",
-            "username": "Ghorbanian"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "e11c3acd2a3415faaf30b87d1599ca95632c5a4f",
-          "message": "block: check and convert difficulty, gasPrice, and value parameters (#1316)",
-          "timestamp": "2021-06-26T13:08:38-07:00",
-          "tree_id": "b47f51a78fd0f659b3389f16b46a8409b25dca6c",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/e11c3acd2a3415faaf30b87d1599ca95632c5a4f"
-        },
-        "date": 1624738327939,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 1680,
-            "range": "±3.03%",
-            "unit": "ops/sec",
-            "extra": "82 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 1597,
-            "range": "±5.86%",
-            "unit": "ops/sec",
-            "extra": "78 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 1711,
-            "range": "±1.43%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 1530,
-            "range": "±10.92%",
-            "unit": "ops/sec",
-            "extra": "75 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 1714,
-            "range": "±1.46%",
-            "unit": "ops/sec",
-            "extra": "87 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1667,
-            "range": "±1.78%",
-            "unit": "ops/sec",
-            "extra": "84 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1654,
-            "range": "±1.60%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1654,
-            "range": "±1.47%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1586,
-            "range": "±1.70%",
-            "unit": "ops/sec",
-            "extra": "82 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1089,
-            "range": "±18.07%",
-            "unit": "ops/sec",
-            "extra": "56 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±2.59%",
             "unit": "ops/sec",
             "extra": "82 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17355484+acolytec3@users.noreply.github.com",
+            "name": "acolytec3",
+            "username": "acolytec3"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5ac0ff827b9220f77515ccbb34a4ea8611d36ee8",
+          "message": "Client: Small types clean-up (#1377)",
+          "timestamp": "2021-07-27T12:01:02-07:00",
+          "tree_id": "9f1281e5489df205cab5bbf3ba5de8b8a0ccedb5",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/5ac0ff827b9220f77515ccbb34a4ea8611d36ee8"
+        },
+        "date": 1627412663457,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 1893,
+            "range": "±2.69%",
+            "unit": "ops/sec",
+            "extra": "91 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 1839,
+            "range": "±4.39%",
+            "unit": "ops/sec",
+            "extra": "90 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 1823,
+            "range": "±4.29%",
+            "unit": "ops/sec",
+            "extra": "94 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 1842,
+            "range": "±1.05%",
+            "unit": "ops/sec",
+            "extra": "93 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 1651,
+            "range": "±6.93%",
+            "unit": "ops/sec",
+            "extra": "87 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 1584,
+            "range": "±8.54%",
+            "unit": "ops/sec",
+            "extra": "89 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 1736,
+            "range": "±1.24%",
+            "unit": "ops/sec",
+            "extra": "93 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 1703,
+            "range": "±1.31%",
+            "unit": "ops/sec",
+            "extra": "89 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 1703,
+            "range": "±1.59%",
+            "unit": "ops/sec",
+            "extra": "87 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 1700,
+            "range": "±2.04%",
+            "unit": "ops/sec",
+            "extra": "85 samples"
           }
         ]
       }
