@@ -42,6 +42,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 - bootstrap() extraction, PR [#1222](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1222)
 - Await DPT init, PR [#1233](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1233)
 - Make fetcher more typesafe, PR [#1023](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1023)
+- Add further type-checking in peerpool and fetcher. PR [#1377](https://github.com/ethereumjs/ethereumjs-monorepo/pull/1377)
 
 **Dependencies, CI and Docs**
 
