@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1627927033652,
+  "lastUpdate": 1627935045924,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "9c5d6ea5b78d3b3166d2e0931112593c630863af",
-          "message": "Merge pull request #1334 from ethereumjs/validate-kovan-genesis\n\nblock: Add fix for kovan nonce",
-          "timestamp": "2021-07-06T18:21:10-04:00",
-          "tree_id": "a0c5875eb230233d7e89ae92faf159f76348a101",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/9c5d6ea5b78d3b3166d2e0931112593c630863af"
-        },
-        "date": 1625610267938,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 1924,
-            "range": "±3.65%",
-            "unit": "ops/sec",
-            "extra": "90 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 1853,
-            "range": "±7.20%",
-            "unit": "ops/sec",
-            "extra": "90 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 1770,
-            "range": "±6.30%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 1909,
-            "range": "±0.87%",
-            "unit": "ops/sec",
-            "extra": "93 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 1865,
-            "range": "±1.58%",
-            "unit": "ops/sec",
-            "extra": "93 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1529,
-            "range": "±10.49%",
-            "unit": "ops/sec",
-            "extra": "77 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1816,
-            "range": "±1.82%",
-            "unit": "ops/sec",
-            "extra": "92 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1822,
-            "range": "±1.15%",
-            "unit": "ops/sec",
-            "extra": "94 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1797,
-            "range": "±1.19%",
-            "unit": "ops/sec",
-            "extra": "94 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1763,
-            "range": "±1.52%",
-            "unit": "ops/sec",
-            "extra": "94 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±14.04%",
             "unit": "ops/sec",
             "extra": "74 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7f095a8d91fe537f040063767871fb6e90716307",
+          "message": "VM: New release v5.5.1 (#1388)",
+          "timestamp": "2021-08-02T13:04:34-07:00",
+          "tree_id": "c1cdf20e5dd10f8f5aefc420fbf10edbd91daaed",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/7f095a8d91fe537f040063767871fb6e90716307"
+        },
+        "date": 1627935045381,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 1946,
+            "range": "±2.55%",
+            "unit": "ops/sec",
+            "extra": "90 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 1889,
+            "range": "±5.29%",
+            "unit": "ops/sec",
+            "extra": "91 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 1933,
+            "range": "±0.90%",
+            "unit": "ops/sec",
+            "extra": "94 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 1703,
+            "range": "±7.99%",
+            "unit": "ops/sec",
+            "extra": "84 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 1843,
+            "range": "±1.88%",
+            "unit": "ops/sec",
+            "extra": "92 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 1853,
+            "range": "±1.03%",
+            "unit": "ops/sec",
+            "extra": "93 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 1820,
+            "range": "±1.20%",
+            "unit": "ops/sec",
+            "extra": "94 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 1696,
+            "range": "±5.69%",
+            "unit": "ops/sec",
+            "extra": "90 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 1273,
+            "range": "±16.05%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 1710,
+            "range": "±1.54%",
+            "unit": "ops/sec",
+            "extra": "91 samples"
           }
         ]
       }
