@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1627699118425,
+  "lastUpdate": 1627927033652,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "cff15170235cf4bbe6e12e45a829fd7652416a9f",
-          "message": "Merge pull request #1322 from emersonmacro/common-chain-fork-enums\n\nCommon: Chain & Hardfork enums",
-          "timestamp": "2021-06-30T11:26:19+02:00",
-          "tree_id": "ea7cff3176bce8b4f3f37b9354632235c7805045",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/cff15170235cf4bbe6e12e45a829fd7652416a9f"
-        },
-        "date": 1625045377937,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 1903,
-            "range": "±4.98%",
-            "unit": "ops/sec",
-            "extra": "89 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 1845,
-            "range": "±6.53%",
-            "unit": "ops/sec",
-            "extra": "89 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 1922,
-            "range": "±0.92%",
-            "unit": "ops/sec",
-            "extra": "94 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 1868,
-            "range": "±1.15%",
-            "unit": "ops/sec",
-            "extra": "93 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 1557,
-            "range": "±10.93%",
-            "unit": "ops/sec",
-            "extra": "77 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1807,
-            "range": "±1.16%",
-            "unit": "ops/sec",
-            "extra": "92 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1803,
-            "range": "±1.27%",
-            "unit": "ops/sec",
-            "extra": "92 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1752,
-            "range": "±1.29%",
-            "unit": "ops/sec",
-            "extra": "92 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1701,
-            "range": "±1.51%",
-            "unit": "ops/sec",
-            "extra": "89 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1354,
-            "range": "±14.08%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±1.95%",
             "unit": "ops/sec",
             "extra": "86 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17355484+acolytec3@users.noreply.github.com",
+            "name": "acolytec3",
+            "username": "acolytec3"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f01403a2b598c9232885dba43c6442e34d0d3ab7",
+          "message": "tx: clarify documentation for `gasPrice` under `FeeMarketEIP1559TxData` interface (#1387)",
+          "timestamp": "2021-08-02T10:54:03-07:00",
+          "tree_id": "a00652d332bd82629decd9ed5532f253d3c46762",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/f01403a2b598c9232885dba43c6442e34d0d3ab7"
+        },
+        "date": 1627927033066,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 1955,
+            "range": "±2.99%",
+            "unit": "ops/sec",
+            "extra": "89 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 1754,
+            "range": "±9.55%",
+            "unit": "ops/sec",
+            "extra": "86 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 1986,
+            "range": "±0.69%",
+            "unit": "ops/sec",
+            "extra": "96 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 1889,
+            "range": "±2.72%",
+            "unit": "ops/sec",
+            "extra": "92 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 1616,
+            "range": "±12.05%",
+            "unit": "ops/sec",
+            "extra": "88 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 1895,
+            "range": "±1.00%",
+            "unit": "ops/sec",
+            "extra": "93 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 1868,
+            "range": "±1.15%",
+            "unit": "ops/sec",
+            "extra": "92 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 1841,
+            "range": "±1.21%",
+            "unit": "ops/sec",
+            "extra": "94 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 1809,
+            "range": "±1.21%",
+            "unit": "ops/sec",
+            "extra": "93 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 1356,
+            "range": "±14.04%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
           }
         ]
       }
