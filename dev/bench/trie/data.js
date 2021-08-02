@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1627699056560,
+  "lastUpdate": 1627926969338,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "cff15170235cf4bbe6e12e45a829fd7652416a9f",
-          "message": "Merge pull request #1322 from emersonmacro/common-chain-fork-enums\n\nCommon: Chain & Hardfork enums",
-          "timestamp": "2021-06-30T11:26:19+02:00",
-          "tree_id": "ea7cff3176bce8b4f3f37b9354632235c7805045",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/cff15170235cf4bbe6e12e45a829fd7652416a9f"
-        },
-        "date": 1625045309760,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 19408,
-            "range": "±13.11%",
-            "unit": "ops/sec",
-            "extra": "65 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 21440,
-            "range": "±2.51%",
-            "unit": "ops/sec",
-            "extra": "77 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 18772,
-            "range": "±2.64%",
-            "unit": "ops/sec",
-            "extra": "78 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 10080,
-            "range": "±17.52%",
-            "unit": "ops/sec",
-            "extra": "45 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 13013,
-            "range": "±38.74%",
-            "unit": "ops/sec",
-            "extra": "68 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1235,
-            "range": "±6.98%",
-            "unit": "ops/sec",
-            "extra": "63 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 115,
-            "range": "±109.77%",
-            "unit": "ops/sec",
-            "extra": "32 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 110,
-            "range": "±38.48%",
-            "unit": "ops/sec",
-            "extra": "59 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 9.88,
-            "range": "±143.80%",
-            "unit": "ops/sec",
-            "extra": "16 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±123.72%",
             "unit": "ops/sec",
             "extra": "20 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17355484+acolytec3@users.noreply.github.com",
+            "name": "acolytec3",
+            "username": "acolytec3"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f01403a2b598c9232885dba43c6442e34d0d3ab7",
+          "message": "tx: clarify documentation for `gasPrice` under `FeeMarketEIP1559TxData` interface (#1387)",
+          "timestamp": "2021-08-02T10:54:03-07:00",
+          "tree_id": "a00652d332bd82629decd9ed5532f253d3c46762",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/f01403a2b598c9232885dba43c6442e34d0d3ab7"
+        },
+        "date": 1627926968161,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 14966,
+            "range": "±14.89%",
+            "unit": "ops/sec",
+            "extra": "65 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 16170,
+            "range": "±2.56%",
+            "unit": "ops/sec",
+            "extra": "72 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 15973,
+            "range": "±2.26%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 15020,
+            "range": "±3.54%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 4557,
+            "range": "±25.48%",
+            "unit": "ops/sec",
+            "extra": "39 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1185,
+            "range": "±6.43%",
+            "unit": "ops/sec",
+            "extra": "64 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 136,
+            "range": "±90.74%",
+            "unit": "ops/sec",
+            "extra": "41 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 129,
+            "range": "±8.36%",
+            "unit": "ops/sec",
+            "extra": "58 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 11.06,
+            "range": "±117.80%",
+            "unit": "ops/sec",
+            "extra": "27 samples"
           }
         ]
       }
