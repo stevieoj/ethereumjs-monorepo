@@ -29,6 +29,13 @@ type GetBlockBodiesOpts = {
   hashes: Buffer[]
 }
 
+type GetNodeDataOpts = {
+  /* Request id (default: next internal id) */
+  reqId?: BN
+  /* The node data hashes */
+  hashes: Buffer[]
+}
+
 /*
  * Messages with responses that are added as
  * methods in camelCase to BoundProtocol.
@@ -36,7 +43,7 @@ type GetBlockBodiesOpts = {
 export interface EthProtocolMethods {
   getBlockHeaders: (opts: GetBlockHeadersOpts) => Promise<[BN, BlockHeader[]]>
   getBlockBodies: (opts: GetBlockBodiesOpts) => Promise<[BN, BlockBodyBuffer[]]>
-  getNodeData: (hashes: Buffer[]) => Promise<Buffer[]>
+  getNodeData: (opts: GetNodeDataOpts) => Promise<[BN, Buffer[]]>
 }
 
 const id = new BN(0)
@@ -118,6 +125,14 @@ export class EthProtocol extends Protocol {
       name: 'GetNodeData',
       code: 0x0d,
       response: 0x0e,
+      encode: ({ reqId, hashes }: GetNodeDataOpts) => [
+        (reqId === undefined ? id.iaddn(1) : new BN(reqId)).toArrayLike(Buffer),
+        hashes,
+      ],
+      decode: ([reqId, hashes]: [Buffer, Buffer[]]) => ({
+        reqId: new BN(reqId),
+        hashes,
+      }),
     },
     {
       name: 'NodeData',
