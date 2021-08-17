@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1629193983885,
+  "lastUpdate": 1629195210737,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "77563348+emersonmacro@users.noreply.github.com",
-            "name": "emersonmacro",
-            "username": "emersonmacro"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "b8bc2551ba2f300c657db12bed4d9905bc5e5c7e",
-          "message": "common: remove dao hardfork from chains when not applied (#1344)",
-          "timestamp": "2021-07-12T12:18:12-07:00",
-          "tree_id": "7c76350724a861d9c4f534d8ec80ef6314807483",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/b8bc2551ba2f300c657db12bed4d9905bc5e5c7e"
-        },
-        "date": 1626117725404,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 19466,
-            "range": "±13.08%",
-            "unit": "ops/sec",
-            "extra": "70 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 21723,
-            "range": "±1.15%",
-            "unit": "ops/sec",
-            "extra": "91 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 19217,
-            "range": "±2.87%",
-            "unit": "ops/sec",
-            "extra": "76 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 10483,
-            "range": "±16.30%",
-            "unit": "ops/sec",
-            "extra": "48 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 14810,
-            "range": "±17.31%",
-            "unit": "ops/sec",
-            "extra": "59 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1307,
-            "range": "±6.55%",
-            "unit": "ops/sec",
-            "extra": "62 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 110,
-            "range": "±119.28%",
-            "unit": "ops/sec",
-            "extra": "24 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 115,
-            "range": "±40.02%",
-            "unit": "ops/sec",
-            "extra": "55 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 7.34,
-            "range": "±124.79%",
-            "unit": "ops/sec",
-            "extra": "13 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±9.38%",
             "unit": "ops/sec",
             "extra": "44 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Holger.Drewes@gmail.com",
+            "name": "Holger Drewes",
+            "username": "holgerd77"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "278549f560d84d4d3325f8749c55e15ec27e3675",
+          "message": "Merge pull request #1373 from ethereumjs/fix-verify-proof\n\ntrie: Better error checking for invalid proofs",
+          "timestamp": "2021-08-17T12:09:14+02:00",
+          "tree_id": "769dda80865898ef7dbfb80d640bb50fbce5d053",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/278549f560d84d4d3325f8749c55e15ec27e3675"
+        },
+        "date": 1629195210079,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 21364,
+            "range": "±13.33%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 22730,
+            "range": "±2.67%",
+            "unit": "ops/sec",
+            "extra": "77 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 20805,
+            "range": "±2.58%",
+            "unit": "ops/sec",
+            "extra": "83 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 8075,
+            "range": "±20.41%",
+            "unit": "ops/sec",
+            "extra": "39 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 20961,
+            "range": "±2.76%",
+            "unit": "ops/sec",
+            "extra": "81 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1368,
+            "range": "±5.80%",
+            "unit": "ops/sec",
+            "extra": "62 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 118,
+            "range": "±119.92%",
+            "unit": "ops/sec",
+            "extra": "25 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 155,
+            "range": "±6.50%",
+            "unit": "ops/sec",
+            "extra": "57 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 9.49,
+            "range": "±143.32%",
+            "unit": "ops/sec",
+            "extra": "14 samples"
           }
         ]
       }
