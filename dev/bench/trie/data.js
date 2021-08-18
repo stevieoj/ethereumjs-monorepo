@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1629299439938,
+  "lastUpdate": 1629304216835,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "ryan@ryanio.com",
-            "name": "Ryan Ghods",
-            "username": "ryanio"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "2b7ff760551539d1b516de51d5ad403a1571640b",
-          "message": "Readme gh actions url fixes (#1353)",
-          "timestamp": "2021-07-16T17:07:00-07:00",
-          "tree_id": "7c5a99abb1256c02f1d4452e6caffd9802bf63be",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/2b7ff760551539d1b516de51d5ad403a1571640b"
-        },
-        "date": 1626480560447,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 15718,
-            "range": "±13.00%",
-            "unit": "ops/sec",
-            "extra": "66 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 17770,
-            "range": "±2.68%",
-            "unit": "ops/sec",
-            "extra": "72 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 16518,
-            "range": "±1.52%",
-            "unit": "ops/sec",
-            "extra": "72 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 14786,
-            "range": "±4.68%",
-            "unit": "ops/sec",
-            "extra": "66 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 5480,
-            "range": "±22.22%",
-            "unit": "ops/sec",
-            "extra": "52 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1128,
-            "range": "±7.16%",
-            "unit": "ops/sec",
-            "extra": "65 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 132,
-            "range": "±89.51%",
-            "unit": "ops/sec",
-            "extra": "47 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 109,
-            "range": "±19.79%",
-            "unit": "ops/sec",
-            "extra": "54 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 25.13,
-            "range": "±10.51%",
-            "unit": "ops/sec",
-            "extra": "30 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±116.87%",
             "unit": "ops/sec",
             "extra": "28 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17355484+acolytec3@users.noreply.github.com",
+            "name": "acolytec3",
+            "username": "acolytec3"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "106165a53ceda371f524cb2bbe7470613825ea74",
+          "message": "Remove tsbuild caches (#1410)\n\n* simplify clean scripts\r\n\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>\r\nCo-authored-by: Ryan Ghods <ryan@ryanio.com>",
+          "timestamp": "2021-08-18T12:25:19-04:00",
+          "tree_id": "ffe707cfacca79380dd1614420e0b4f569d22a48",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/106165a53ceda371f524cb2bbe7470613825ea74"
+        },
+        "date": 1629304216134,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 15573,
+            "range": "±13.62%",
+            "unit": "ops/sec",
+            "extra": "64 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 17577,
+            "range": "±3.29%",
+            "unit": "ops/sec",
+            "extra": "59 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 15877,
+            "range": "±1.80%",
+            "unit": "ops/sec",
+            "extra": "67 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 14906,
+            "range": "±2.53%",
+            "unit": "ops/sec",
+            "extra": "68 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 7953,
+            "range": "±15.04%",
+            "unit": "ops/sec",
+            "extra": "36 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 801,
+            "range": "±32.40%",
+            "unit": "ops/sec",
+            "extra": "56 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 143,
+            "range": "±79.72%",
+            "unit": "ops/sec",
+            "extra": "56 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 124,
+            "range": "±7.77%",
+            "unit": "ops/sec",
+            "extra": "59 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 9.65,
+            "range": "±124.69%",
+            "unit": "ops/sec",
+            "extra": "26 samples"
           }
         ]
       }
