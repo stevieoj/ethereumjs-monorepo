@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1629319702587,
+  "lastUpdate": 1629468277470,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "77563348+emersonmacro@users.noreply.github.com",
-            "name": "emersonmacro",
-            "username": "emersonmacro"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "8d140c3ba11a5f9824c7a0dd5952eea8e80f9a75",
-          "message": "Chain & HF enum usage (#1363)",
-          "timestamp": "2021-07-19T16:59:44-07:00",
-          "tree_id": "22b160f5cdb6e735a0e87956468b4444e2b5cc1b",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/8d140c3ba11a5f9824c7a0dd5952eea8e80f9a75"
-        },
-        "date": 1626739393891,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 1870,
-            "range": "±4.07%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 1823,
-            "range": "±7.38%",
-            "unit": "ops/sec",
-            "extra": "84 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 1721,
-            "range": "±8.06%",
-            "unit": "ops/sec",
-            "extra": "78 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 1879,
-            "range": "±1.30%",
-            "unit": "ops/sec",
-            "extra": "87 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 1723,
-            "range": "±7.75%",
-            "unit": "ops/sec",
-            "extra": "81 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1578,
-            "range": "±9.46%",
-            "unit": "ops/sec",
-            "extra": "80 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1802,
-            "range": "±1.44%",
-            "unit": "ops/sec",
-            "extra": "84 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1782,
-            "range": "±1.96%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1746,
-            "range": "±1.77%",
-            "unit": "ops/sec",
-            "extra": "82 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1737,
-            "range": "±1.86%",
-            "unit": "ops/sec",
-            "extra": "80 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±1.77%",
             "unit": "ops/sec",
             "extra": "88 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jochembrouwer96@gmail.com",
+            "name": "Jochem Brouwer",
+            "username": "jochem-brouwer"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cbcb7ac5893f691c436412d99f3f9fd72e0d9664",
+          "message": "Client: keep syncing at tip of chain (#1132)\n\n* client: fullsync: keep syncing at tip of chain\r\n\r\n* client -> tip of the chain: extract new block handler addition to dedicated method, expand to light sync\r\n\r\n* client -> tip of the chain: aligned NewBlockHashes message trigger with other ETH messages, consolidated with existing announced method\r\n\r\n* client -> tip of the chain: moved synchronized property to config, more fine grained sync and re-sync handling (including target height comparison)\r\n\r\n* client -> tip of the chain: reset synchronization status after SYNCED_STATE_REMOVAL_PERIOD seconds with no chain updates\r\n\r\n* update client.synchronized to client.config.synchronized\r\n\r\n* tidy up handleNewBlockHashes code\r\n\r\n* add resolve and reject conditions to syncWithPeer, fix tests\r\n\r\n* clean up interval use, stops memory leak\r\n\r\n* remove redundant test now that synchronized property moved from EthereumClient to config\r\n\r\n* emit event to finish sync\r\n\r\n* to help finish integration tests, if syncTargetHeight is not available, get latest block number from status msg\r\n\r\n* implement newly added abstract method to SynchronizerTest to fix ts compile error\r\n\r\n* fix promise that was throwing due to undefined\r\n\r\n* client: align destroyWhenDone and destroyOnFinish naming in Fetcher\r\n\r\n* client: switched from blocks to headers height in Synchronizer CHAIN_UPDATED handling to also work for light clients\r\n\r\n* client: use best peer status height for a first sync target height\r\n\r\n* client: unify full and light sync() method in Synchronizer\r\n\r\n* client: update sync state if no peer with a higher status height than on local DB is found\r\n\r\n* client: fixed sync unit test\r\n\r\n* client: comment out sync status update on stale peer connections (needs test fixes before activation)\r\n\r\n* client: comment out whole sync reconnection logic until tests are fixed\r\n\r\n* client: make full sync integration tests more robust\r\n\r\nCo-authored-by: holgerd77 <Holger.Drewes@gmail.com>\r\nCo-authored-by: Ryan Ghods <ryan@ryanio.com>",
+          "timestamp": "2021-08-20T15:55:57+02:00",
+          "tree_id": "600204f88d3db6fbfc632aec7c6bb797e53f720c",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/cbcb7ac5893f691c436412d99f3f9fd72e0d9664"
+        },
+        "date": 1629468276421,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 1690,
+            "range": "±3.70%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 1721,
+            "range": "±6.11%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 1693,
+            "range": "±1.29%",
+            "unit": "ops/sec",
+            "extra": "82 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 1700,
+            "range": "±1.37%",
+            "unit": "ops/sec",
+            "extra": "85 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 1719,
+            "range": "±1.71%",
+            "unit": "ops/sec",
+            "extra": "84 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 1727,
+            "range": "±1.56%",
+            "unit": "ops/sec",
+            "extra": "83 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 1703,
+            "range": "±1.44%",
+            "unit": "ops/sec",
+            "extra": "83 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 1451,
+            "range": "±9.18%",
+            "unit": "ops/sec",
+            "extra": "70 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 1359,
+            "range": "±17.61%",
+            "unit": "ops/sec",
+            "extra": "76 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 1638,
+            "range": "±1.71%",
+            "unit": "ops/sec",
+            "extra": "82 samples"
           }
         ]
       }
