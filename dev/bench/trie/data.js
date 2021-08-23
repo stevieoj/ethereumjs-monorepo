@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1629484753225,
+  "lastUpdate": 1629707434892,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "jochembrouwer96@gmail.com",
-            "name": "Jochem Brouwer",
-            "username": "jochem-brouwer"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "7a2301c2fc00f3350634bcc7f4a50c41d1445094",
-          "message": "VM: fix EIP1559 bug to include tx value in balance check, fix nonce check (#1372)",
-          "timestamp": "2021-07-21T20:08:07-07:00",
-          "tree_id": "504fbb5b8f0b62c43295452d56c814b648adaaee",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/7a2301c2fc00f3350634bcc7f4a50c41d1445094"
-        },
-        "date": 1626923423454,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 18532,
-            "range": "±13.51%",
-            "unit": "ops/sec",
-            "extra": "66 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 19443,
-            "range": "±3.25%",
-            "unit": "ops/sec",
-            "extra": "72 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 17870,
-            "range": "±1.97%",
-            "unit": "ops/sec",
-            "extra": "76 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 11692,
-            "range": "±15.32%",
-            "unit": "ops/sec",
-            "extra": "50 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 10543,
-            "range": "±27.62%",
-            "unit": "ops/sec",
-            "extra": "55 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1254,
-            "range": "±6.83%",
-            "unit": "ops/sec",
-            "extra": "61 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 125,
-            "range": "±106.46%",
-            "unit": "ops/sec",
-            "extra": "32 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 106,
-            "range": "±46.76%",
-            "unit": "ops/sec",
-            "extra": "60 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 22.12,
-            "range": "±72.91%",
-            "unit": "ops/sec",
-            "extra": "17 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2608,6 +2521,93 @@ window.BENCHMARK_DATA = {
             "name": "Checkpointing: 5000 iterations",
             "value": 9.58,
             "range": "±122.03%",
+            "unit": "ops/sec",
+            "extra": "27 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17355484+acolytec3@users.noreply.github.com",
+            "name": "acolytec3",
+            "username": "acolytec3"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5430bf33c00106fafcd35f730ac2d32211834f07",
+          "message": "client: create custom chain `common` from geth genesis file (#1414)\n\n* common: new constructor from geth genesis file\r\n\r\n* Add deps\r\n\r\n* add tests\r\n\r\n* Remove block/trie dependencies\r\n\r\n* make hash/stateroot required on common again\r\n\r\n* Rework customGenesis constructor/helper script\r\n\r\n* lint fixes\r\n\r\n* Move customGenesis functionality to client\r\n\r\n* Handle poa in gethGenesis\r\n\r\n* Fix parse tests\r\n\r\n* Update comments in parse\r\n\r\n* revert blockchain edits\r\n\r\n* lint\r\n\r\n* Add genesisState test\r\n\r\n* Add nonce formatting test",
+          "timestamp": "2021-08-23T10:25:29+02:00",
+          "tree_id": "53dfab35218e51c212a3c0905300456c9e0d37f0",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/5430bf33c00106fafcd35f730ac2d32211834f07"
+        },
+        "date": 1629707434180,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 14532,
+            "range": "±12.65%",
+            "unit": "ops/sec",
+            "extra": "65 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 14933,
+            "range": "±15.75%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 14943,
+            "range": "±2.99%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 14100,
+            "range": "±3.72%",
+            "unit": "ops/sec",
+            "extra": "71 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 7125,
+            "range": "±27.05%",
+            "unit": "ops/sec",
+            "extra": "38 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1039,
+            "range": "±16.38%",
+            "unit": "ops/sec",
+            "extra": "65 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 249,
+            "range": "±8.93%",
+            "unit": "ops/sec",
+            "extra": "49 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 112,
+            "range": "±13.80%",
+            "unit": "ops/sec",
+            "extra": "58 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 10.49,
+            "range": "±120.14%",
             "unit": "ops/sec",
             "extra": "27 samples"
           }
