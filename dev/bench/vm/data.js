@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1629796227575,
+  "lastUpdate": 1629895817146,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "ryan@ryanio.com",
-            "name": "Ryan Ghods",
-            "username": "ryanio"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "8b358df24517b92e53a573c6acc583dbaa2d2d63",
-          "message": "VM: fix several internal todos (#1375)",
-          "timestamp": "2021-07-25T10:33:12-07:00",
-          "tree_id": "35a6f6a40c3ae81f93e91bb9b8665fd1c2483026",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/8b358df24517b92e53a573c6acc583dbaa2d2d63"
-        },
-        "date": 1627234589795,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 1942,
-            "range": "±4.09%",
-            "unit": "ops/sec",
-            "extra": "89 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 1893,
-            "range": "±5.88%",
-            "unit": "ops/sec",
-            "extra": "90 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 1964,
-            "range": "±0.80%",
-            "unit": "ops/sec",
-            "extra": "93 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 1942,
-            "range": "±0.89%",
-            "unit": "ops/sec",
-            "extra": "93 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 1910,
-            "range": "±1.10%",
-            "unit": "ops/sec",
-            "extra": "93 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1530,
-            "range": "±10.33%",
-            "unit": "ops/sec",
-            "extra": "78 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1832,
-            "range": "±1.17%",
-            "unit": "ops/sec",
-            "extra": "93 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1824,
-            "range": "±1.10%",
-            "unit": "ops/sec",
-            "extra": "92 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1815,
-            "range": "±1.35%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1780,
-            "range": "±1.72%",
-            "unit": "ops/sec",
-            "extra": "89 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±2.24%",
             "unit": "ops/sec",
             "extra": "78 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Holger.Drewes@gmail.com",
+            "name": "Holger Drewes",
+            "username": "holgerd77"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ae9989c6efd5d7916938351ae0f065b9fc9adb42",
+          "message": "Devp2p: RLPx send message code and debug improvements (#1425)\n\n* devp2p: improved RLPx message sending and protocol selection code and debug message",
+          "timestamp": "2021-08-25T08:44:58-04:00",
+          "tree_id": "475b44509a2146d8ee27c0e93763ed5ff7eaba08",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/ae9989c6efd5d7916938351ae0f065b9fc9adb42"
+        },
+        "date": 1629895816463,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 2253,
+            "range": "±2.90%",
+            "unit": "ops/sec",
+            "extra": "85 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 2044,
+            "range": "±6.70%",
+            "unit": "ops/sec",
+            "extra": "82 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 2132,
+            "range": "±1.66%",
+            "unit": "ops/sec",
+            "extra": "89 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 2140,
+            "range": "±1.64%",
+            "unit": "ops/sec",
+            "extra": "91 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 2081,
+            "range": "±1.66%",
+            "unit": "ops/sec",
+            "extra": "91 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 2013,
+            "range": "±1.89%",
+            "unit": "ops/sec",
+            "extra": "90 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 1885,
+            "range": "±2.19%",
+            "unit": "ops/sec",
+            "extra": "86 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 1343,
+            "range": "±14.74%",
+            "unit": "ops/sec",
+            "extra": "64 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 1779,
+            "range": "±4.22%",
+            "unit": "ops/sec",
+            "extra": "85 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 1842,
+            "range": "±2.32%",
+            "unit": "ops/sec",
+            "extra": "86 samples"
           }
         ]
       }
