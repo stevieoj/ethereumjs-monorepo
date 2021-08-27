@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1630028246756,
+  "lastUpdate": 1630054620211,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "ryan@ryanio.com",
-            "name": "Ryan Ghods",
-            "username": "ryanio"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "c008e8eb76f520df83eb47c769e3a006bc24124f",
-          "message": "eslint: rule clean up and consolidation (#1378)",
-          "timestamp": "2021-07-26T21:24:09-07:00",
-          "tree_id": "a4e40db7c3b5747c5de10289c3f452016fdefe31",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/c008e8eb76f520df83eb47c769e3a006bc24124f"
-        },
-        "date": 1627360097456,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 12866,
-            "range": "±15.27%",
-            "unit": "ops/sec",
-            "extra": "63 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 14534,
-            "range": "±11.03%",
-            "unit": "ops/sec",
-            "extra": "70 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 14900,
-            "range": "±3.08%",
-            "unit": "ops/sec",
-            "extra": "74 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 13721,
-            "range": "±3.98%",
-            "unit": "ops/sec",
-            "extra": "76 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 6364,
-            "range": "±25.98%",
-            "unit": "ops/sec",
-            "extra": "32 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1080,
-            "range": "±7.30%",
-            "unit": "ops/sec",
-            "extra": "59 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 138,
-            "range": "±78.67%",
-            "unit": "ops/sec",
-            "extra": "54 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 98.19,
-            "range": "±34.69%",
-            "unit": "ops/sec",
-            "extra": "57 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 10.46,
-            "range": "±117.91%",
-            "unit": "ops/sec",
-            "extra": "27 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2608,6 +2521,93 @@ window.BENCHMARK_DATA = {
             "name": "Checkpointing: 5000 iterations",
             "value": 8.19,
             "range": "±122.18%",
+            "unit": "ops/sec",
+            "extra": "16 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17355484+acolytec3@users.noreply.github.com",
+            "name": "acolytec3",
+            "username": "acolytec3"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a2ed1a10761e753d8a38fba4859aa8f8d0294df4",
+          "message": "client: Fix connection issues with geth when using custom genesis file (#1423)\n\n* devp2p: improved RLPx message sending and protocol selection code and debug message\r\n\r\n* devp2p: lint fixes\r\n\r\n* Add forkhash calculation to parse utilities\r\n\r\n* update customGenesis path handling/formatNonce\r\n\r\n* clarify customGenesis param description\r\n\r\n* Fix function name change in tests\r\n\r\n* Move fork hash calculation to common constructor\r\n\r\n* throw when spurious dragon block numbers don't match\r\n\r\n* Update tests\r\n\r\n* Add example usage for custom geth params\r\n\r\n* reorganize cli params and function names\r\n\r\n* readme updates, cli tweaks, and test fixes\r\n\r\n* requested edits\r\n\r\n* nit fix :-)\r\n\r\n* clarify geth setup instructions\r\n\r\n* Move examples to separate doc\r\n\r\nCo-authored-by: holgerd77 <Holger.Drewes@gmail.com>",
+          "timestamp": "2021-08-27T10:51:40+02:00",
+          "tree_id": "3e68ae952d23e3cc0d808b75089734ada1e44187",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/a2ed1a10761e753d8a38fba4859aa8f8d0294df4"
+        },
+        "date": 1630054619523,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 18135,
+            "range": "±13.16%",
+            "unit": "ops/sec",
+            "extra": "70 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 21179,
+            "range": "±2.40%",
+            "unit": "ops/sec",
+            "extra": "79 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 19098,
+            "range": "±2.62%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 10943,
+            "range": "±18.25%",
+            "unit": "ops/sec",
+            "extra": "46 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 12715,
+            "range": "±25.15%",
+            "unit": "ops/sec",
+            "extra": "55 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1254,
+            "range": "±6.44%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 117,
+            "range": "±119.18%",
+            "unit": "ops/sec",
+            "extra": "29 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 118,
+            "range": "±28.14%",
+            "unit": "ops/sec",
+            "extra": "56 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 9.82,
+            "range": "±143.24%",
             "unit": "ops/sec",
             "extra": "16 samples"
           }
