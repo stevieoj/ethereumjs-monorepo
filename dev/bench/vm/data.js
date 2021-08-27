@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1630061133910,
+  "lastUpdate": 1630086053253,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "77563348+emersonmacro@users.noreply.github.com",
-            "name": "emersonmacro",
-            "username": "emersonmacro"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "39c18b133b57469c157d97f5cfefafa52b89bd12",
-          "message": "VM: stateManager -> add modifyAccountFields method (#1369)",
-          "timestamp": "2021-07-27T12:55:40-07:00",
-          "tree_id": "4eabb2b0289d8cd3481983cd203a16db6655bda9",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/39c18b133b57469c157d97f5cfefafa52b89bd12"
-        },
-        "date": 1627415962427,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 1591,
-            "range": "±3.99%",
-            "unit": "ops/sec",
-            "extra": "87 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 1577,
-            "range": "±5.66%",
-            "unit": "ops/sec",
-            "extra": "84 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 1599,
-            "range": "±0.93%",
-            "unit": "ops/sec",
-            "extra": "87 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 1604,
-            "range": "±1.19%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 1352,
-            "range": "±10.26%",
-            "unit": "ops/sec",
-            "extra": "75 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1547,
-            "range": "±1.08%",
-            "unit": "ops/sec",
-            "extra": "84 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1535,
-            "range": "±1.13%",
-            "unit": "ops/sec",
-            "extra": "81 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1522,
-            "range": "±1.09%",
-            "unit": "ops/sec",
-            "extra": "81 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1486,
-            "range": "±1.67%",
-            "unit": "ops/sec",
-            "extra": "77 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1027,
-            "range": "±18.04%",
-            "unit": "ops/sec",
-            "extra": "55 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±2.28%",
             "unit": "ops/sec",
             "extra": "87 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Holger.Drewes@gmail.com",
+            "name": "Holger Drewes",
+            "username": "holgerd77"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e8c5c15dfcfe545d3ca9938f9f3ec127c7877618",
+          "message": "Client: sendRawTransaction RPC method TxPool inclusion / generalization of HF choice for tx creation / tx pool improvements and cleanup functionality (#1428)\n\n* client -> RPC: generalize HF selection for tx creation in sendRawTransaction RPC call\r\n\r\n* client -> RPC: expand RPC test baseSetup() return values to be more flexible along test setup modification\r\n\r\n* client -> RPC: added additional sendRawTransaction RPC method sync target height test\r\n\r\n* client -> txPool, RPC: added new addTransaction() and sendTransactions() tx pool methods\r\n\r\n* client -> tx pool: only send txs to peers if the list of txs is not empty\r\n\r\n* client -> tx pool: switched to map for handled data structure to prepare for more efficient hash pool access and allow for cleanup\r\n\r\n* client -> tx pool: added two new internal types UnprefixedAddress and UnprefixedHash for more explicit hash and address string typing\r\n\r\n* client -> tx pool: improved API terminology\r\n\r\n* client -> tx pool: extract removeByHash() functionality, rewrite retrieval code\r\n\r\n* client -> tx pool: added tx pool cleanup functionality and tests",
+          "timestamp": "2021-08-27T19:35:13+02:00",
+          "tree_id": "a936d14fc00fe5ae017316d5a728ee882818b1c8",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/e8c5c15dfcfe545d3ca9938f9f3ec127c7877618"
+        },
+        "date": 1630086052554,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 1945,
+            "range": "±3.05%",
+            "unit": "ops/sec",
+            "extra": "85 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 1833,
+            "range": "±6.18%",
+            "unit": "ops/sec",
+            "extra": "83 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 1828,
+            "range": "±5.42%",
+            "unit": "ops/sec",
+            "extra": "88 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 1834,
+            "range": "±1.49%",
+            "unit": "ops/sec",
+            "extra": "88 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 1847,
+            "range": "±1.54%",
+            "unit": "ops/sec",
+            "extra": "88 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 1774,
+            "range": "±1.87%",
+            "unit": "ops/sec",
+            "extra": "84 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 1843,
+            "range": "±1.47%",
+            "unit": "ops/sec",
+            "extra": "88 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 1779,
+            "range": "±1.50%",
+            "unit": "ops/sec",
+            "extra": "88 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 1171,
+            "range": "±19.01%",
+            "unit": "ops/sec",
+            "extra": "58 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 1676,
+            "range": "±2.03%",
+            "unit": "ops/sec",
+            "extra": "84 samples"
           }
         ]
       }
