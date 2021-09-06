@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1630723156602,
+  "lastUpdate": 1630918020650,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "ryan@ryanio.com",
-            "name": "Ryan Ghods",
-            "username": "ryanio"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "f0ade046e2c4205bf27d86dc4f1462f444a2980b",
-          "message": "common: fix hardforkBlockBN() to correctly return null for unscheduled hardforks (#1329)",
-          "timestamp": "2021-08-05T19:17:07-07:00",
-          "tree_id": "1d256ddfcf0909433a86167ead726a78df2d94d3",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/f0ade046e2c4205bf27d86dc4f1462f444a2980b"
-        },
-        "date": 1628216423438,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 1938,
-            "range": "±3.32%",
-            "unit": "ops/sec",
-            "extra": "90 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 1881,
-            "range": "±5.86%",
-            "unit": "ops/sec",
-            "extra": "89 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 1920,
-            "range": "±0.93%",
-            "unit": "ops/sec",
-            "extra": "94 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 1888,
-            "range": "±1.04%",
-            "unit": "ops/sec",
-            "extra": "93 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 1579,
-            "range": "±11.82%",
-            "unit": "ops/sec",
-            "extra": "77 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1853,
-            "range": "±1.09%",
-            "unit": "ops/sec",
-            "extra": "94 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1823,
-            "range": "±1.17%",
-            "unit": "ops/sec",
-            "extra": "93 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1788,
-            "range": "±1.22%",
-            "unit": "ops/sec",
-            "extra": "92 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1747,
-            "range": "±1.33%",
-            "unit": "ops/sec",
-            "extra": "92 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1758,
-            "range": "±1.56%",
-            "unit": "ops/sec",
-            "extra": "91 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±1.19%",
             "unit": "ops/sec",
             "extra": "78 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Holger.Drewes@gmail.com",
+            "name": "Holger Drewes",
+            "username": "holgerd77"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6e6dfb8f4c813c8be4be23b3f5a627e3aa545835",
+          "message": "Devp2p: Per-Message debugging for ETH and other protocols / Improved docs (#1449)\n\n* devp2p -> debugger: added ETH protocol per-message debugging, improved debug logging documentation\r\n\r\n* devp2p -> debugger: added LES protocol per-message debugging\r\n\r\n* devp2p -> debugger: added RLPx protocol per-message debugging\r\n\r\n* devp2p -> debugger: added DPT server per-message debugging\r\n\r\n* devp2p -> debugger: added special RLPx peer DISCONNECT reason logger\r\n\r\n* devp2p -> debugger: added IP-based per-peer debugger and special FIRST_PEER first-connected-peer debugger",
+          "timestamp": "2021-09-06T10:41:59+02:00",
+          "tree_id": "784e7beebcc27abb71ddd85517a0c5449ee21eee",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/6e6dfb8f4c813c8be4be23b3f5a627e3aa545835"
+        },
+        "date": 1630918020013,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 1898,
+            "range": "±5.46%",
+            "unit": "ops/sec",
+            "extra": "82 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 1930,
+            "range": "±1.27%",
+            "unit": "ops/sec",
+            "extra": "83 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 1903,
+            "range": "±1.31%",
+            "unit": "ops/sec",
+            "extra": "83 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 1576,
+            "range": "±8.23%",
+            "unit": "ops/sec",
+            "extra": "79 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 1726,
+            "range": "±1.20%",
+            "unit": "ops/sec",
+            "extra": "88 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 1659,
+            "range": "±1.40%",
+            "unit": "ops/sec",
+            "extra": "88 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 1589,
+            "range": "±1.53%",
+            "unit": "ops/sec",
+            "extra": "86 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 1609,
+            "range": "±0.75%",
+            "unit": "ops/sec",
+            "extra": "92 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 1633,
+            "range": "±1.30%",
+            "unit": "ops/sec",
+            "extra": "88 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 1585,
+            "range": "±4.56%",
+            "unit": "ops/sec",
+            "extra": "88 samples"
           }
         ]
       }
