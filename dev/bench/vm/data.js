@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1630921026590,
+  "lastUpdate": 1631002121568,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "contact@rockwaterweb.com",
-            "name": "Gabriel Rocheleau",
-            "username": "gabrocheleau"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "587ee70ae9b21cfe9c0eb438d946248382468c31",
-          "message": "Merge pull request #1398 from ethereumjs/common/consensus-type-enum\n\ncommon: enums for ConsensusType and ConsensusAlgorithm",
-          "timestamp": "2021-08-11T12:56:48-04:00",
-          "tree_id": "59fdbcb1bd503b6fbdf6a10b898a04bfae605f42",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/587ee70ae9b21cfe9c0eb438d946248382468c31"
-        },
-        "date": 1628701224694,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 1830,
-            "range": "±4.49%",
-            "unit": "ops/sec",
-            "extra": "86 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 1734,
-            "range": "±7.52%",
-            "unit": "ops/sec",
-            "extra": "83 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 1791,
-            "range": "±1.18%",
-            "unit": "ops/sec",
-            "extra": "88 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 1749,
-            "range": "±1.15%",
-            "unit": "ops/sec",
-            "extra": "89 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 1650,
-            "range": "±6.08%",
-            "unit": "ops/sec",
-            "extra": "88 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1405,
-            "range": "±12.41%",
-            "unit": "ops/sec",
-            "extra": "80 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1712,
-            "range": "±0.76%",
-            "unit": "ops/sec",
-            "extra": "92 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1639,
-            "range": "±1.30%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1612,
-            "range": "±0.62%",
-            "unit": "ops/sec",
-            "extra": "93 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1567,
-            "range": "±1.20%",
-            "unit": "ops/sec",
-            "extra": "88 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±12.33%",
             "unit": "ops/sec",
             "extra": "70 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a3984a3b80bccbfb376918c51556a845afbecad9",
+          "message": "monorepo: upgrade TypeScript to v4, explicit `error: any` type for catch clauses (#1452)\n\n* run test on PR to debug\r\n\r\n* upgrade typescript version\r\n\r\n* add `any` type to error catch clauses to satisfy noImplicitAny\r\n\r\n* remove debugging line\r\n\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
+          "timestamp": "2021-09-07T10:02:39+02:00",
+          "tree_id": "46e7349936bfc096d73d386f8a206e1c475df364",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/a3984a3b80bccbfb376918c51556a845afbecad9"
+        },
+        "date": 1631002120506,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 1781,
+            "range": "±2.50%",
+            "unit": "ops/sec",
+            "extra": "82 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 1749,
+            "range": "±4.74%",
+            "unit": "ops/sec",
+            "extra": "79 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 1783,
+            "range": "±1.36%",
+            "unit": "ops/sec",
+            "extra": "84 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 1704,
+            "range": "±1.38%",
+            "unit": "ops/sec",
+            "extra": "85 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 1747,
+            "range": "±1.56%",
+            "unit": "ops/sec",
+            "extra": "80 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 1708,
+            "range": "±1.35%",
+            "unit": "ops/sec",
+            "extra": "83 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 1395,
+            "range": "±15.61%",
+            "unit": "ops/sec",
+            "extra": "60 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 1709,
+            "range": "±1.83%",
+            "unit": "ops/sec",
+            "extra": "82 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 1667,
+            "range": "±1.47%",
+            "unit": "ops/sec",
+            "extra": "80 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 1671,
+            "range": "±1.59%",
+            "unit": "ops/sec",
+            "extra": "86 samples"
           }
         ]
       }
