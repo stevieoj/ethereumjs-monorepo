@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1631094150472,
+  "lastUpdate": 1631096531766,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "7cd22b6599dc6f9c75fbca974feb130205ba1b85",
-          "message": "Merge pull request #1399 from ethereumjs/snappy\n\ndevp2p: Add snappy compression for devp2p - EIP-706",
-          "timestamp": "2021-08-17T11:47:32+02:00",
-          "tree_id": "c46fdaa3b2f5608a05b9f1572bbe7d49b6a3c809",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/7cd22b6599dc6f9c75fbca974feb130205ba1b85"
-        },
-        "date": 1629193983236,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 13513,
-            "range": "±9.84%",
-            "unit": "ops/sec",
-            "extra": "66 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 12208,
-            "range": "±13.69%",
-            "unit": "ops/sec",
-            "extra": "67 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 15010,
-            "range": "±2.08%",
-            "unit": "ops/sec",
-            "extra": "62 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 13973,
-            "range": "±3.45%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 10084,
-            "range": "±18.39%",
-            "unit": "ops/sec",
-            "extra": "47 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 736,
-            "range": "±24.91%",
-            "unit": "ops/sec",
-            "extra": "49 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 231,
-            "range": "±8.16%",
-            "unit": "ops/sec",
-            "extra": "62 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 17.56,
-            "range": "±159.57%",
-            "unit": "ops/sec",
-            "extra": "11 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 23.93,
-            "range": "±9.38%",
-            "unit": "ops/sec",
-            "extra": "44 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±134.01%",
             "unit": "ops/sec",
             "extra": "15 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17355484+acolytec3@users.noreply.github.com",
+            "name": "acolytec3",
+            "username": "acolytec3"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d4159a427c69088bc9e0494b32b997c9e4abc7e7",
+          "message": "client: change event params to named tuples (#1457)\n\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
+          "timestamp": "2021-09-08T12:17:01+02:00",
+          "tree_id": "df2dfb7da7c462e2e7574da790e4f1b4075a143c",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/d4159a427c69088bc9e0494b32b997c9e4abc7e7"
+        },
+        "date": 1631096531092,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 14836,
+            "range": "±11.03%",
+            "unit": "ops/sec",
+            "extra": "70 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 16737,
+            "range": "±1.58%",
+            "unit": "ops/sec",
+            "extra": "70 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 10140,
+            "range": "±13.59%",
+            "unit": "ops/sec",
+            "extra": "50 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 10560,
+            "range": "±23.00%",
+            "unit": "ops/sec",
+            "extra": "65 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 14381,
+            "range": "±2.90%",
+            "unit": "ops/sec",
+            "extra": "64 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1131,
+            "range": "±7.15%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 110,
+            "range": "±107.50%",
+            "unit": "ops/sec",
+            "extra": "33 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 109,
+            "range": "±26.30%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 24.53,
+            "range": "±11.73%",
+            "unit": "ops/sec",
+            "extra": "25 samples"
           }
         ]
       }
