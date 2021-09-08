@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1631094189321,
+  "lastUpdate": 1631096505971,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "7cd22b6599dc6f9c75fbca974feb130205ba1b85",
-          "message": "Merge pull request #1399 from ethereumjs/snappy\n\ndevp2p: Add snappy compression for devp2p - EIP-706",
-          "timestamp": "2021-08-17T11:47:32+02:00",
-          "tree_id": "c46fdaa3b2f5608a05b9f1572bbe7d49b6a3c809",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/7cd22b6599dc6f9c75fbca974feb130205ba1b85"
-        },
-        "date": 1629193938291,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 2119,
-            "range": "±3.63%",
-            "unit": "ops/sec",
-            "extra": "90 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 2137,
-            "range": "±1.07%",
-            "unit": "ops/sec",
-            "extra": "93 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 1898,
-            "range": "±8.72%",
-            "unit": "ops/sec",
-            "extra": "83 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 2059,
-            "range": "±1.15%",
-            "unit": "ops/sec",
-            "extra": "92 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 2041,
-            "range": "±1.20%",
-            "unit": "ops/sec",
-            "extra": "92 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1999,
-            "range": "±1.35%",
-            "unit": "ops/sec",
-            "extra": "91 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1969,
-            "range": "±1.43%",
-            "unit": "ops/sec",
-            "extra": "92 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1899,
-            "range": "±1.98%",
-            "unit": "ops/sec",
-            "extra": "90 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1861,
-            "range": "±1.82%",
-            "unit": "ops/sec",
-            "extra": "89 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1745,
-            "range": "±6.44%",
-            "unit": "ops/sec",
-            "extra": "87 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±0.70%",
             "unit": "ops/sec",
             "extra": "93 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17355484+acolytec3@users.noreply.github.com",
+            "name": "acolytec3",
+            "username": "acolytec3"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d4159a427c69088bc9e0494b32b997c9e4abc7e7",
+          "message": "client: change event params to named tuples (#1457)\n\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
+          "timestamp": "2021-09-08T12:17:01+02:00",
+          "tree_id": "df2dfb7da7c462e2e7574da790e4f1b4075a143c",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/d4159a427c69088bc9e0494b32b997c9e4abc7e7"
+        },
+        "date": 1631096505363,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 2181,
+            "range": "±2.42%",
+            "unit": "ops/sec",
+            "extra": "88 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 2075,
+            "range": "±6.65%",
+            "unit": "ops/sec",
+            "extra": "89 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 2167,
+            "range": "±0.83%",
+            "unit": "ops/sec",
+            "extra": "94 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 2135,
+            "range": "±0.92%",
+            "unit": "ops/sec",
+            "extra": "94 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 2101,
+            "range": "±1.03%",
+            "unit": "ops/sec",
+            "extra": "93 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 1622,
+            "range": "±15.15%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 2038,
+            "range": "±1.16%",
+            "unit": "ops/sec",
+            "extra": "94 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 2024,
+            "range": "±1.23%",
+            "unit": "ops/sec",
+            "extra": "92 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 1978,
+            "range": "±1.57%",
+            "unit": "ops/sec",
+            "extra": "92 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 1954,
+            "range": "±1.39%",
+            "unit": "ops/sec",
+            "extra": "92 samples"
           }
         ]
       }
