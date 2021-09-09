@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1631096531766,
+  "lastUpdate": 1631178575729,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "278549f560d84d4d3325f8749c55e15ec27e3675",
-          "message": "Merge pull request #1373 from ethereumjs/fix-verify-proof\n\ntrie: Better error checking for invalid proofs",
-          "timestamp": "2021-08-17T12:09:14+02:00",
-          "tree_id": "769dda80865898ef7dbfb80d640bb50fbce5d053",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/278549f560d84d4d3325f8749c55e15ec27e3675"
-        },
-        "date": 1629195210079,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 21364,
-            "range": "±13.33%",
-            "unit": "ops/sec",
-            "extra": "69 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 22730,
-            "range": "±2.67%",
-            "unit": "ops/sec",
-            "extra": "77 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 20805,
-            "range": "±2.58%",
-            "unit": "ops/sec",
-            "extra": "83 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 8075,
-            "range": "±20.41%",
-            "unit": "ops/sec",
-            "extra": "39 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 20961,
-            "range": "±2.76%",
-            "unit": "ops/sec",
-            "extra": "81 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1368,
-            "range": "±5.80%",
-            "unit": "ops/sec",
-            "extra": "62 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 118,
-            "range": "±119.92%",
-            "unit": "ops/sec",
-            "extra": "25 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 155,
-            "range": "±6.50%",
-            "unit": "ops/sec",
-            "extra": "57 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 9.49,
-            "range": "±143.32%",
-            "unit": "ops/sec",
-            "extra": "14 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±11.73%",
             "unit": "ops/sec",
             "extra": "25 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jochembrouwer96@gmail.com",
+            "name": "Jochem Brouwer",
+            "username": "jochem-brouwer"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b373df57a5965c52ce1c786b81b83accf349e04a",
+          "message": "VM: Add test to ensure that IDENTITY precompile copies the memory (chain split from 2021-08) (#1436)\n\n* vm: tests: add evm exploit test\r\n\r\n* vm: update geth chain split test comment\r\n\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
+          "timestamp": "2021-09-09T11:04:19+02:00",
+          "tree_id": "4ef7ec7347970fd5b751e751abfd25fe9eee0773",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/b373df57a5965c52ce1c786b81b83accf349e04a"
+        },
+        "date": 1631178575066,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 14128,
+            "range": "±13.14%",
+            "unit": "ops/sec",
+            "extra": "64 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 15136,
+            "range": "±2.10%",
+            "unit": "ops/sec",
+            "extra": "71 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 11276,
+            "range": "±15.56%",
+            "unit": "ops/sec",
+            "extra": "57 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 7953,
+            "range": "±27.36%",
+            "unit": "ops/sec",
+            "extra": "56 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 14005,
+            "range": "±3.38%",
+            "unit": "ops/sec",
+            "extra": "66 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1060,
+            "range": "±8.26%",
+            "unit": "ops/sec",
+            "extra": "58 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 120,
+            "range": "±96.84%",
+            "unit": "ops/sec",
+            "extra": "41 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 99.88,
+            "range": "±36.22%",
+            "unit": "ops/sec",
+            "extra": "58 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 10.06,
+            "range": "±118.76%",
+            "unit": "ops/sec",
+            "extra": "27 samples"
           }
         ]
       }
