@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1631096505971,
+  "lastUpdate": 1631178587722,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "278549f560d84d4d3325f8749c55e15ec27e3675",
-          "message": "Merge pull request #1373 from ethereumjs/fix-verify-proof\n\ntrie: Better error checking for invalid proofs",
-          "timestamp": "2021-08-17T12:09:14+02:00",
-          "tree_id": "769dda80865898ef7dbfb80d640bb50fbce5d053",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/278549f560d84d4d3325f8749c55e15ec27e3675"
-        },
-        "date": 1629195221633,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 2353,
-            "range": "±2.38%",
-            "unit": "ops/sec",
-            "extra": "89 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 2358,
-            "range": "±1.01%",
-            "unit": "ops/sec",
-            "extra": "91 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 2044,
-            "range": "±8.44%",
-            "unit": "ops/sec",
-            "extra": "81 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 2226,
-            "range": "±1.44%",
-            "unit": "ops/sec",
-            "extra": "91 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 2188,
-            "range": "±1.40%",
-            "unit": "ops/sec",
-            "extra": "87 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1685,
-            "range": "±12.83%",
-            "unit": "ops/sec",
-            "extra": "71 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 2089,
-            "range": "±1.76%",
-            "unit": "ops/sec",
-            "extra": "89 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 2032,
-            "range": "±1.88%",
-            "unit": "ops/sec",
-            "extra": "88 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1980,
-            "range": "±2.18%",
-            "unit": "ops/sec",
-            "extra": "87 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1891,
-            "range": "±2.50%",
-            "unit": "ops/sec",
-            "extra": "86 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±1.39%",
             "unit": "ops/sec",
             "extra": "92 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jochembrouwer96@gmail.com",
+            "name": "Jochem Brouwer",
+            "username": "jochem-brouwer"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b373df57a5965c52ce1c786b81b83accf349e04a",
+          "message": "VM: Add test to ensure that IDENTITY precompile copies the memory (chain split from 2021-08) (#1436)\n\n* vm: tests: add evm exploit test\r\n\r\n* vm: update geth chain split test comment\r\n\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
+          "timestamp": "2021-09-09T11:04:19+02:00",
+          "tree_id": "4ef7ec7347970fd5b751e751abfd25fe9eee0773",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/b373df57a5965c52ce1c786b81b83accf349e04a"
+        },
+        "date": 1631178587114,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 1688,
+            "range": "±3.96%",
+            "unit": "ops/sec",
+            "extra": "87 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 1645,
+            "range": "±7.16%",
+            "unit": "ops/sec",
+            "extra": "87 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 1702,
+            "range": "±0.81%",
+            "unit": "ops/sec",
+            "extra": "92 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 1698,
+            "range": "±0.69%",
+            "unit": "ops/sec",
+            "extra": "94 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 1412,
+            "range": "±11.03%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 1648,
+            "range": "±0.68%",
+            "unit": "ops/sec",
+            "extra": "91 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 1640,
+            "range": "±0.49%",
+            "unit": "ops/sec",
+            "extra": "94 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 1613,
+            "range": "±0.36%",
+            "unit": "ops/sec",
+            "extra": "95 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 1594,
+            "range": "±0.76%",
+            "unit": "ops/sec",
+            "extra": "92 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 1572,
+            "range": "±0.59%",
+            "unit": "ops/sec",
+            "extra": "91 samples"
           }
         ]
       }
