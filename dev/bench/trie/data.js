@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1631261462076,
+  "lastUpdate": 1631266356311,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "106165a53ceda371f524cb2bbe7470613825ea74",
-          "message": "Remove tsbuild caches (#1410)\n\n* simplify clean scripts\r\n\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>\r\nCo-authored-by: Ryan Ghods <ryan@ryanio.com>",
-          "timestamp": "2021-08-18T12:25:19-04:00",
-          "tree_id": "ffe707cfacca79380dd1614420e0b4f569d22a48",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/106165a53ceda371f524cb2bbe7470613825ea74"
-        },
-        "date": 1629304216134,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 15573,
-            "range": "±13.62%",
-            "unit": "ops/sec",
-            "extra": "64 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 17577,
-            "range": "±3.29%",
-            "unit": "ops/sec",
-            "extra": "59 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 15877,
-            "range": "±1.80%",
-            "unit": "ops/sec",
-            "extra": "67 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 14906,
-            "range": "±2.53%",
-            "unit": "ops/sec",
-            "extra": "68 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 7953,
-            "range": "±15.04%",
-            "unit": "ops/sec",
-            "extra": "36 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 801,
-            "range": "±32.40%",
-            "unit": "ops/sec",
-            "extra": "56 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 143,
-            "range": "±79.72%",
-            "unit": "ops/sec",
-            "extra": "56 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 124,
-            "range": "±7.77%",
-            "unit": "ops/sec",
-            "extra": "59 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 9.65,
-            "range": "±124.69%",
-            "unit": "ops/sec",
-            "extra": "26 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±125.46%",
             "unit": "ops/sec",
             "extra": "24 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Holger.Drewes@gmail.com",
+            "name": "Holger Drewes",
+            "username": "holgerd77"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "69f5ec6c650a16e361168f196de5871a72c08c52",
+          "message": "Util: More explicit EIP-1191 checksum usage discouraged note / Client: remove Rinkeby from CLI test matrix (#1463)\n\n* util: added more explicit note about providing a chainId to produce EIP-1191 compatible checksums with toChecksumAddress() being discouraged\r\n\r\n* client: removed Rinkeby from client CLI runs being to unreliable often leading to CI failures",
+          "timestamp": "2021-09-10T11:26:53+02:00",
+          "tree_id": "fc6d688e3f4d5e1c402a8bca7961d0174d0b2ccd",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/69f5ec6c650a16e361168f196de5871a72c08c52"
+        },
+        "date": 1631266355096,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 10470,
+            "range": "±14.10%",
+            "unit": "ops/sec",
+            "extra": "64 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 13218,
+            "range": "±2.72%",
+            "unit": "ops/sec",
+            "extra": "76 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 11818,
+            "range": "±3.69%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 6595,
+            "range": "±21.63%",
+            "unit": "ops/sec",
+            "extra": "44 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 12750,
+            "range": "±4.14%",
+            "unit": "ops/sec",
+            "extra": "67 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 995,
+            "range": "±7.66%",
+            "unit": "ops/sec",
+            "extra": "63 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 157,
+            "range": "±52.88%",
+            "unit": "ops/sec",
+            "extra": "56 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 88.02,
+            "range": "±47.57%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 22.86,
+            "range": "±10.05%",
+            "unit": "ops/sec",
+            "extra": "29 samples"
           }
         ]
       }
