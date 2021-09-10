@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1631225052174,
+  "lastUpdate": 1631261465464,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "340a3851d8a39d5cd35a5dd53a296d49f5562b1f",
-          "message": "Merge pull request #1409 from ethereumjs/common-with-custom-genesis\n\nCommon: allow Common with custom genesis state (for a custom chain)",
-          "timestamp": "2021-08-18T17:05:43+02:00",
-          "tree_id": "72cc9354930b15899dee036964102f029092115f",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/340a3851d8a39d5cd35a5dd53a296d49f5562b1f"
-        },
-        "date": 1629299422657,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 2135,
-            "range": "±3.17%",
-            "unit": "ops/sec",
-            "extra": "90 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 1975,
-            "range": "±7.67%",
-            "unit": "ops/sec",
-            "extra": "86 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 2037,
-            "range": "±1.19%",
-            "unit": "ops/sec",
-            "extra": "91 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 1976,
-            "range": "±1.35%",
-            "unit": "ops/sec",
-            "extra": "91 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 1942,
-            "range": "±1.73%",
-            "unit": "ops/sec",
-            "extra": "90 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1938,
-            "range": "±1.41%",
-            "unit": "ops/sec",
-            "extra": "91 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1873,
-            "range": "±1.57%",
-            "unit": "ops/sec",
-            "extra": "91 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1633,
-            "range": "±10.07%",
-            "unit": "ops/sec",
-            "extra": "82 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1444,
-            "range": "±12.54%",
-            "unit": "ops/sec",
-            "extra": "71 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1761,
-            "range": "±1.99%",
-            "unit": "ops/sec",
-            "extra": "90 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±1.95%",
             "unit": "ops/sec",
             "extra": "86 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ee1a44eb135e881e6bfa035d53357a496a59c30c",
+          "message": "ci: fix hardhat e2e (#1467)\n\n* test adding @types/bn.js to resolutions\r\n\r\n* add method to break statemanager interface which should cause hardhat e2e build failure\r\n\r\n* Revert \"add method to break statemanager interface which should cause hardhat e2e build failure\"\r\n\r\nThis reverts commit b5b2960aaf623935316d15ff52c557540c79153d.\r\n\r\n* improve workaround notes",
+          "timestamp": "2021-09-10T10:05:43+02:00",
+          "tree_id": "11520a5cb17e0d1b6440eede54f088754c5e8b90",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/ee1a44eb135e881e6bfa035d53357a496a59c30c"
+        },
+        "date": 1631261462095,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 1798,
+            "range": "±4.72%",
+            "unit": "ops/sec",
+            "extra": "84 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 1838,
+            "range": "±0.81%",
+            "unit": "ops/sec",
+            "extra": "91 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 1850,
+            "range": "±0.97%",
+            "unit": "ops/sec",
+            "extra": "92 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 1635,
+            "range": "±10.37%",
+            "unit": "ops/sec",
+            "extra": "77 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 1831,
+            "range": "±1.23%",
+            "unit": "ops/sec",
+            "extra": "88 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 1837,
+            "range": "±1.37%",
+            "unit": "ops/sec",
+            "extra": "89 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 1757,
+            "range": "±1.33%",
+            "unit": "ops/sec",
+            "extra": "90 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 1703,
+            "range": "±1.62%",
+            "unit": "ops/sec",
+            "extra": "85 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 1623,
+            "range": "±1.30%",
+            "unit": "ops/sec",
+            "extra": "87 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 1067,
+            "range": "±18.53%",
+            "unit": "ops/sec",
+            "extra": "56 samples"
           }
         ]
       }
