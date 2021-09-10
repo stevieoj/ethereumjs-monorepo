@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1631261465464,
+  "lastUpdate": 1631266354394,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "106165a53ceda371f524cb2bbe7470613825ea74",
-          "message": "Remove tsbuild caches (#1410)\n\n* simplify clean scripts\r\n\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>\r\nCo-authored-by: Ryan Ghods <ryan@ryanio.com>",
-          "timestamp": "2021-08-18T12:25:19-04:00",
-          "tree_id": "ffe707cfacca79380dd1614420e0b4f569d22a48",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/106165a53ceda371f524cb2bbe7470613825ea74"
-        },
-        "date": 1629304219110,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 1838,
-            "range": "±2.60%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 1866,
-            "range": "±1.50%",
-            "unit": "ops/sec",
-            "extra": "87 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 1664,
-            "range": "±8.00%",
-            "unit": "ops/sec",
-            "extra": "81 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 1826,
-            "range": "±1.47%",
-            "unit": "ops/sec",
-            "extra": "88 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 1780,
-            "range": "±1.77%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1695,
-            "range": "±1.77%",
-            "unit": "ops/sec",
-            "extra": "83 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1734,
-            "range": "±1.81%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1712,
-            "range": "±2.04%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1622,
-            "range": "±5.96%",
-            "unit": "ops/sec",
-            "extra": "80 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 901,
-            "range": "±17.85%",
-            "unit": "ops/sec",
-            "extra": "66 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±18.53%",
             "unit": "ops/sec",
             "extra": "56 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Holger.Drewes@gmail.com",
+            "name": "Holger Drewes",
+            "username": "holgerd77"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "69f5ec6c650a16e361168f196de5871a72c08c52",
+          "message": "Util: More explicit EIP-1191 checksum usage discouraged note / Client: remove Rinkeby from CLI test matrix (#1463)\n\n* util: added more explicit note about providing a chainId to produce EIP-1191 compatible checksums with toChecksumAddress() being discouraged\r\n\r\n* client: removed Rinkeby from client CLI runs being to unreliable often leading to CI failures",
+          "timestamp": "2021-09-10T11:26:53+02:00",
+          "tree_id": "fc6d688e3f4d5e1c402a8bca7961d0174d0b2ccd",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/69f5ec6c650a16e361168f196de5871a72c08c52"
+        },
+        "date": 1631266353336,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 1668,
+            "range": "±4.18%",
+            "unit": "ops/sec",
+            "extra": "82 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 1663,
+            "range": "±7.37%",
+            "unit": "ops/sec",
+            "extra": "84 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 1704,
+            "range": "±1.14%",
+            "unit": "ops/sec",
+            "extra": "84 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 1697,
+            "range": "±1.00%",
+            "unit": "ops/sec",
+            "extra": "87 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 1390,
+            "range": "±12.93%",
+            "unit": "ops/sec",
+            "extra": "68 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 1617,
+            "range": "±0.91%",
+            "unit": "ops/sec",
+            "extra": "87 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 1608,
+            "range": "±1.34%",
+            "unit": "ops/sec",
+            "extra": "85 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 1562,
+            "range": "±1.25%",
+            "unit": "ops/sec",
+            "extra": "86 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 1594,
+            "range": "±1.51%",
+            "unit": "ops/sec",
+            "extra": "79 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 1537,
+            "range": "±1.63%",
+            "unit": "ops/sec",
+            "extra": "85 samples"
           }
         ]
       }
