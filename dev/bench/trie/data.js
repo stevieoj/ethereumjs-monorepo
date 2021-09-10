@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1631225029346,
+  "lastUpdate": 1631261462076,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "340a3851d8a39d5cd35a5dd53a296d49f5562b1f",
-          "message": "Merge pull request #1409 from ethereumjs/common-with-custom-genesis\n\nCommon: allow Common with custom genesis state (for a custom chain)",
-          "timestamp": "2021-08-18T17:05:43+02:00",
-          "tree_id": "72cc9354930b15899dee036964102f029092115f",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/340a3851d8a39d5cd35a5dd53a296d49f5562b1f"
-        },
-        "date": 1629299439320,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 16001,
-            "range": "±14.67%",
-            "unit": "ops/sec",
-            "extra": "60 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 18579,
-            "range": "±1.29%",
-            "unit": "ops/sec",
-            "extra": "80 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 16729,
-            "range": "±2.25%",
-            "unit": "ops/sec",
-            "extra": "69 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 13145,
-            "range": "±12.85%",
-            "unit": "ops/sec",
-            "extra": "60 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 6846,
-            "range": "±19.19%",
-            "unit": "ops/sec",
-            "extra": "54 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1152,
-            "range": "±7.44%",
-            "unit": "ops/sec",
-            "extra": "66 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 128,
-            "range": "±86.90%",
-            "unit": "ops/sec",
-            "extra": "47 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 113,
-            "range": "±11.47%",
-            "unit": "ops/sec",
-            "extra": "56 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 10.19,
-            "range": "±116.87%",
-            "unit": "ops/sec",
-            "extra": "28 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±125.12%",
             "unit": "ops/sec",
             "extra": "15 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ee1a44eb135e881e6bfa035d53357a496a59c30c",
+          "message": "ci: fix hardhat e2e (#1467)\n\n* test adding @types/bn.js to resolutions\r\n\r\n* add method to break statemanager interface which should cause hardhat e2e build failure\r\n\r\n* Revert \"add method to break statemanager interface which should cause hardhat e2e build failure\"\r\n\r\nThis reverts commit b5b2960aaf623935316d15ff52c557540c79153d.\r\n\r\n* improve workaround notes",
+          "timestamp": "2021-09-10T10:05:43+02:00",
+          "tree_id": "11520a5cb17e0d1b6440eede54f088754c5e8b90",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/ee1a44eb135e881e6bfa035d53357a496a59c30c"
+        },
+        "date": 1631261460405,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 13566,
+            "range": "±11.21%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 14774,
+            "range": "±2.25%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 11325,
+            "range": "±12.39%",
+            "unit": "ops/sec",
+            "extra": "63 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 8820,
+            "range": "±20.96%",
+            "unit": "ops/sec",
+            "extra": "62 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 14605,
+            "range": "±3.24%",
+            "unit": "ops/sec",
+            "extra": "67 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1151,
+            "range": "±6.42%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 118,
+            "range": "±106.83%",
+            "unit": "ops/sec",
+            "extra": "31 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 131,
+            "range": "±6.88%",
+            "unit": "ops/sec",
+            "extra": "56 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 10.05,
+            "range": "±125.46%",
+            "unit": "ops/sec",
+            "extra": "24 samples"
           }
         ]
       }
