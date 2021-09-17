@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1631693087413,
+  "lastUpdate": 1631846990234,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "c63ab7fa711851395ecb53d4f6c137dc5eaa6fc4",
-          "message": "client: missing headers/bodies message to debug level (#1415)",
-          "timestamp": "2021-08-20T14:34:15-04:00",
-          "tree_id": "e6517c96b0c2d297e7e68bdd80bc5d10c837ee1f",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/c63ab7fa711851395ecb53d4f6c137dc5eaa6fc4"
-        },
-        "date": 1629484765080,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 1663,
-            "range": "±3.39%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 1578,
-            "range": "±13.13%",
-            "unit": "ops/sec",
-            "extra": "81 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 1636,
-            "range": "±1.15%",
-            "unit": "ops/sec",
-            "extra": "86 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 1635,
-            "range": "±1.16%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 1554,
-            "range": "±1.49%",
-            "unit": "ops/sec",
-            "extra": "86 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1260,
-            "range": "±10.81%",
-            "unit": "ops/sec",
-            "extra": "69 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1523,
-            "range": "±2.08%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1468,
-            "range": "±1.74%",
-            "unit": "ops/sec",
-            "extra": "81 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1532,
-            "range": "±1.35%",
-            "unit": "ops/sec",
-            "extra": "81 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1508,
-            "range": "±0.85%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±1.58%",
             "unit": "ops/sec",
             "extra": "86 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "17355484+acolytec3@users.noreply.github.com",
+            "name": "acolytec3",
+            "username": "acolytec3"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "395aed6d074e140edb743082a5d70338a453fd04",
+          "message": "client: Bug fix in logic for adding known blocks to peers (#1479)\n\n* client: Fix for adding known blocks to peers",
+          "timestamp": "2021-09-16T19:38:49-07:00",
+          "tree_id": "38d070edd05e3f792038bc192d8e12620b754e4b",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/395aed6d074e140edb743082a5d70338a453fd04"
+        },
+        "date": 1631846989192,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 1699,
+            "range": "±2.99%",
+            "unit": "ops/sec",
+            "extra": "85 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 1649,
+            "range": "±7.10%",
+            "unit": "ops/sec",
+            "extra": "80 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 1697,
+            "range": "±1.11%",
+            "unit": "ops/sec",
+            "extra": "83 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 1688,
+            "range": "±1.29%",
+            "unit": "ops/sec",
+            "extra": "87 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 1651,
+            "range": "±1.60%",
+            "unit": "ops/sec",
+            "extra": "85 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 1613,
+            "range": "±1.70%",
+            "unit": "ops/sec",
+            "extra": "83 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 1436,
+            "range": "±7.85%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 1319,
+            "range": "±15.42%",
+            "unit": "ops/sec",
+            "extra": "77 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 1568,
+            "range": "±1.22%",
+            "unit": "ops/sec",
+            "extra": "86 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 1585,
+            "range": "±0.94%",
+            "unit": "ops/sec",
+            "extra": "84 samples"
           }
         ]
       }
