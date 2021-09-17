@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1631846876839,
+  "lastUpdate": 1631858738426,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "5430bf33c00106fafcd35f730ac2d32211834f07",
-          "message": "client: create custom chain `common` from geth genesis file (#1414)\n\n* common: new constructor from geth genesis file\r\n\r\n* Add deps\r\n\r\n* add tests\r\n\r\n* Remove block/trie dependencies\r\n\r\n* make hash/stateroot required on common again\r\n\r\n* Rework customGenesis constructor/helper script\r\n\r\n* lint fixes\r\n\r\n* Move customGenesis functionality to client\r\n\r\n* Handle poa in gethGenesis\r\n\r\n* Fix parse tests\r\n\r\n* Update comments in parse\r\n\r\n* revert blockchain edits\r\n\r\n* lint\r\n\r\n* Add genesisState test\r\n\r\n* Add nonce formatting test",
-          "timestamp": "2021-08-23T10:25:29+02:00",
-          "tree_id": "53dfab35218e51c212a3c0905300456c9e0d37f0",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/5430bf33c00106fafcd35f730ac2d32211834f07"
-        },
-        "date": 1629707434180,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 14532,
-            "range": "±12.65%",
-            "unit": "ops/sec",
-            "extra": "65 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 14933,
-            "range": "±15.75%",
-            "unit": "ops/sec",
-            "extra": "69 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 14943,
-            "range": "±2.99%",
-            "unit": "ops/sec",
-            "extra": "74 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 14100,
-            "range": "±3.72%",
-            "unit": "ops/sec",
-            "extra": "71 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 7125,
-            "range": "±27.05%",
-            "unit": "ops/sec",
-            "extra": "38 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1039,
-            "range": "±16.38%",
-            "unit": "ops/sec",
-            "extra": "65 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 249,
-            "range": "±8.93%",
-            "unit": "ops/sec",
-            "extra": "49 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 112,
-            "range": "±13.80%",
-            "unit": "ops/sec",
-            "extra": "58 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 10.49,
-            "range": "±120.14%",
-            "unit": "ops/sec",
-            "extra": "27 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±121.79%",
             "unit": "ops/sec",
             "extra": "26 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Holger.Drewes@gmail.com",
+            "name": "Holger Drewes",
+            "username": "holgerd77"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "90fea3df7a07dd1b1af248a19e76ad56a5432b94",
+          "message": "Common: allow setting and retrieving HF by total difficulty (#1473)\n\n* common: extended getHardforkByBlockNumber(), setHardforkByBlockNumber() to also take an optional TD as an input, added merge/POS specific custom chain test files, added tests\r\n\r\n* common: added hardforkTD() function, added additional tests for Merge-following HF block number set, pur POS chain tests\r\n\r\n* block: added hardforkByTD option, added tests\r\n\r\n* blockchain: integrate TD HF switching into blockchain (WIP), added tests\r\n\r\n* blockchain -> DBManager: use parent TD for getHeader() and getBlock() Header/Block instantiation hardforkByTD option\r\n\r\n* vm: added hardforkByTD option, added tests\r\n\r\nCo-authored-by: Ryan Ghods <ryan@ryanio.com>",
+          "timestamp": "2021-09-17T08:00:37+02:00",
+          "tree_id": "b9800d396706f1df4a848447dfc1a41b0459884c",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/90fea3df7a07dd1b1af248a19e76ad56a5432b94"
+        },
+        "date": 1631858737768,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 16520,
+            "range": "±10.15%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 16889,
+            "range": "±2.37%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 9689,
+            "range": "±18.72%",
+            "unit": "ops/sec",
+            "extra": "44 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 14503,
+            "range": "±2.57%",
+            "unit": "ops/sec",
+            "extra": "68 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 15612,
+            "range": "±2.51%",
+            "unit": "ops/sec",
+            "extra": "39 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1256,
+            "range": "±7.66%",
+            "unit": "ops/sec",
+            "extra": "59 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 106,
+            "range": "±105.70%",
+            "unit": "ops/sec",
+            "extra": "28 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 144,
+            "range": "±7.48%",
+            "unit": "ops/sec",
+            "extra": "57 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 15.4,
+            "range": "±120.54%",
+            "unit": "ops/sec",
+            "extra": "14 samples"
           }
         ]
       }
